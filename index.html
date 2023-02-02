@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio Alejandro Marín</title>
+    <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">RAM web</a>
+            </div>    
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()"><strong>INICIO</strong></a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()"><strong>SOBRE MI</strong></a></li>
+                    <li><a href="#habilidades" onclick="seleccionar()"><strong>HABILIDADES</strong></a></li>
+                    <li><a href="#cv" onclick="seleccionar()"><strong>CV</strong></a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()"><strong>PORTFOLIO</strong></a></li>
+                    <li><a href="#contacto" onclick="seleccionar()"><strong>CONTACTO</strong></a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION DE INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="hero.jpg" alt="" height="300px" width="400px">
+            </div>
+            <h1>ALEJANDRO MARIN</h1>
+            <h2>Web Developer</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></i></a>
+                <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre mi</h2>
+            <p><span>Hola, soy Ale.</span> Estoy re podrido de laburar para vampiros colmilludos que solamente les intesresa la guita
+            y que dejes tu sangre para sus propios intereses. Quiero ser freelance y elegir yo si me bajo los lienzos o te rompo el orto 
+            con los precios. Si querés te puedo hacer una página en la cual muestres tu culo plenamente abierto. Tu culo como un boquete
+            en primer plano. Es un crater lunar? No, es tu crater de cuero.</p>
+            
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Nacimiento</strong>
+                            11-01-1986
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            (011)15-3123-3790
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            <a href="mailto:alejandrormarin@gmail.com">alejandrormarin@gmail.com</a>
+                        </li>
+                        <li>
+                            <strong>Sitio Web</strong>
+                            <a href="file:///C:/Users/aleja/OneDrive/Escritorio/Proyecto%20CV/index.html#">www.ACM1PT.com</a>
+                        </li>
+                        <li>
+                            <strong>Ocupación</strong>
+                            <span>CONTABLE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>GAMING</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-guitar"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>FUTBOL</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <span>DISEÑO WEB</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-d-and-d"></i>
+                            <span>D&D</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-coins"></i>
+                            <span>CONTABILIDAD</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-money-bill"></i>
+                            <span>ADMIN.</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LECTURA</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-file-arrow-down"></i>
+                <span class="overlay"></span>
+            </button>
+        </div> 
+    </section>
+
+    <!-- SECCION HABILIDADES -->
+    <section class="habilidades" id="habilidades">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!--Habilidades Técnicas-->
+                <div class="col">
+                    <h3>Capacidades Técnicas</h3>
+                    <div class="habilidad">
+                        <span>Javascript</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>HTML</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>CSS</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>SQL</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Python</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Ruby</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Habilidades Profesionales -->
+                <div class="col">
+                    <h3>Capacidades Profesionales</h3>
+                    <div class="habilidad">
+                        <span>Comunicación</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Responsabilidad</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Autonomía</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Decisión</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Resolución</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="cv" class="cv">
+        <div class="contenido-seccion">
+            <h2>Curriculum Vitae</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Perito Mercantil</h4>
+                        <span class="casa">EEM N°13 Don Manuel Belgrano "Comercial de Ballester"</span>
+                        <span class="fecha">2001 - 2005</span>
+                        <p></p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Administración de Empresas</h4>
+                        <span class="casa">Universidad Nacional de San Martín</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Cursada desde el año 2006 hasta el año 2009. Con 23 materias aprobadas, decidí cambiar de rumbo por
+                        cuestiones personales. Los conocimientos adquiridos fueron de gran ayuda para mi desarrollo tanto profesional como 
+                        personal. 
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Contador Público Nacional</h4>
+                        <span class="casa">Universidad de 3 de Febrero</span>
+                        <span class="fecha">2020 - Cursando actualmente</span>
+                    <p>Actualmente cursando el tercer año de la carrera con un 65% de aprobación total. En simultáneo estoy estudiando desarrollo web full stack.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia laboral</h3>
+                    <div class="item der">
+                        <h4>Administrativo / Contable</h4>
+                        <span class="casa">Tefquim S.A</span>
+                        <span class="fecha">2019 - Actual</span>
+                        <p>Administrativo Contable. Encargado de liquidación de IVA, Portal IVA, Convenio Multilateral (12
+                            jurisdicciones), SICORE, ARCIBA, ARBA, Utilización de sistema SIPOT (Salta), Liquidación mensual en
+                            plataforma ATM Misiones (Agentes de recaudación),pago a proveedores, cobranzas, conciliación
+                            bancaria, logística y facturación. Amplio manejo y conocimiento de sistema Tango.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Implementación de Sistemas</h4>
+                        <span class="casa">SyC S.A</span>
+                        <span class="fecha">2018 - 2018</span>
+                        <p>Gestión de deuda presencial, telefónica y virtual de Tasa por Servicios Generales y Tasa por
+                            Inspección de Seguridad e Higiene (Servicios Municipales). Asesoría y puesta en marcha de sistema de
+                            gestión de recaudación en entes municipales de recaudación (SGT, plataforma web). Coordinación de
+                            grupo de trabajo del Cuerpo de Gestión de Vía Pública (Municipalidad de Escobar).</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Administrativo</h4>
+                        <span class="casa">Sualier S.A.</span>
+                        <span class="fecha">2013 - 2018</span>
+                        <p>Responsable de caja diaria (apertura y cierre, control de ingreso y egreso de efectivo y cheques)
+                            Atención de reclamos.
+                            Armado de presupuestos, facturación (sistema GMpro11), atención al cliente, cobranzas. Conciliación
+                            de cuentas corrientes de clientes y proveedores.
+                            Control de orden de carga con facturación (logística).
+                            Armado de hoja de ruta (logística).
+                            Pago a proveedores.
+                            Alta y baja de mercadería.
+                            Actualización de precios.
+                            Armado de lista de precios.
+                            Liquidación comisiones vendedores, liquidación horas extras de personal de planta y choferes.
+                            Trabajo bajo normas ISO 9001 y 14001.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Portfolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="imagen1.png" alt="Foto de página contable" height="500px" width="1100px">
+                    <div class="overlay">
+                        <h3>Diseño Web</h3>
+                        <p>Sitio web del estudio contable "Contame y te ayudo"</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="imagen2.jpg" alt="Foto de página contable" height="500px" width="550px">
+                    <div class="overlay">
+                        <h3>Diseño</h3>
+                        <p>Logo</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="imagen3.jpg" alt="Foto de página contable" height="500px" width="550px">
+                    <div class="overlay">
+                        <h3>Diseño</h3>
+                        <p>Logo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Teléfono">
+                    <input type="text" placeholder="email">
+                    <input type="text" placeholder="Consulta">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar <i class="fa-regular fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-sharp fa-solid fa-turn-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></i></a>
+            <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
